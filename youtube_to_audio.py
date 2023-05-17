@@ -33,7 +33,8 @@ if __name__ == "__main__":
     'postprocessors': [{
         'key': 'FFmpegExtractAudio',
         'preferredcodec': preferred_codec,
-    }],
+        }],
     }
+
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         download_from_url(args.url, preferred_codec)
